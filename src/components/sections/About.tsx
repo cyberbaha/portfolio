@@ -68,7 +68,7 @@ export default function About() {
             className="relative"
           >
               <div className="relative rounded-2xl overflow-hidden neon-border">
-              <div className="aspect-[4/3] relative">
+              <div className="aspect-[3/4] relative">
                 <img
                   src="/portfolio/render3d.jpg"
                   alt="3D Render"

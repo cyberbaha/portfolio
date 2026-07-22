@@ -43,7 +43,7 @@ export default function Gallery() {
               transition={{ duration: 0.6, delay: 0.2 + i * 0.15 }}
               className="glass-card overflow-hidden group"
             >
-              <div className="relative aspect-[4/3] overflow-hidden">
+              <div className="relative aspect-[3/4] overflow-hidden">
                 <img
                   src={photo.src}
                   alt={photo.alt}
