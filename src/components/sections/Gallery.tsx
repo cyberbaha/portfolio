@@ -17,6 +17,14 @@ const photos = [
     src: "/portfolio/photo-3.jpg",
     alt: "Photo 3",
   },
+  {
+    src: "/portfolio/photo-4.jpg",
+    alt: "Photo 4",
+  },
+  {
+    src: "/portfolio/photo-5.jpg",
+    alt: "Photo 5",
+  },
 ];
 
 export default function Gallery() {
@@ -34,7 +42,7 @@ export default function Gallery() {
           subtitle="Quelques photos de mon parcours"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {photos.map((photo, i) => (
             <motion.div
               key={photo.src}
