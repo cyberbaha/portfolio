@@ -3,7 +3,6 @@
 import { useRef } from "react";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { cvData } from "@/lib/cv-data";
-import Image from "next/image";
 import SectionHeading from "@/components/ui/SectionHeading";
 
 export default function About() {
@@ -68,14 +67,12 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="relative"
           >
-            <div className="relative rounded-2xl overflow-hidden neon-border">
+              <div className="relative rounded-2xl overflow-hidden neon-border">
               <div className="aspect-[4/3] relative">
-                <Image
-                  src="/render3d.jpg"
+                <img
+                  src="/portfolio/render3d.jpg"
                   alt="3D Render"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0f] via-transparent to-transparent" />
               </div>

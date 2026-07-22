@@ -4,7 +4,6 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ChevronDown, MapPin, Phone, Mail } from "lucide-react";
 import { cvData } from "@/lib/cv-data";
-import Image from "next/image";
 
 export default function Hero() {
   const ref = useRef(null);
@@ -41,13 +40,10 @@ export default function Hero() {
       <div className="absolute inset-0 bg-hero-gradient" />
 
       <div className="absolute inset-0 opacity-20">
-        <Image
-          src="/stadium.jpg"
+        <img
+          src="/portfolio/stadium.jpg"
           alt="Football stadium"
-          fill
-          className="object-cover"
-          priority
-          sizes="100vw"
+          className="w-full h-full object-cover"
         />
       </div>
 

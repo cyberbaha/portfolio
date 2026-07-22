@@ -3,19 +3,18 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import SectionHeading from "@/components/ui/SectionHeading";
-import Image from "next/image";
 
 const photos = [
   {
-    src: "/photo-1.jpg",
+    src: "/portfolio/photo-1.jpg",
     alt: "Photo 1",
   },
   {
-    src: "/photo-2.jpg",
+    src: "/portfolio/photo-2.jpg",
     alt: "Photo 2",
   },
   {
-    src: "/photo-3.jpg",
+    src: "/portfolio/photo-3.jpg",
     alt: "Photo 3",
   },
 ];
@@ -45,12 +44,10 @@ export default function Gallery() {
               className="glass-card overflow-hidden group"
             >
               <div className="relative aspect-[4/3] overflow-hidden">
-                <Image
+                <img
                   src={photo.src}
                   alt={photo.alt}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0f] via-transparent to-transparent opacity-60" />
               </div>
